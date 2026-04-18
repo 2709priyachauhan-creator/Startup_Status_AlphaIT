@@ -62,7 +62,7 @@ if page == "EDA Dashboard":
         with col_left:
             st.subheader("Live Data Snapshot")
             # Streamlit's native dataframe allows sorting and scrolling
-            st.dataframe(filtered_df[['name', 'market', 'funding_total_usd', 'funding_rounds', 'status']].head(100), height=350)
+            st.dataframe(filtered_df[['name', 'market', 'funding_total_usd', 'funding_rounds', 'status']], height=350)
             
         with col_right:
             st.subheader("Filtered Class Imbalance")
